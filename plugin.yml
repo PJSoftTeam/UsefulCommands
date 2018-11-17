@@ -1,0 +1,23 @@
+name: UsefulCommands
+main: PJSoft\UsefulCommands\Main
+version: 1.0.0
+api: [3.0.0, 4.0.0]
+load: POSTWORLD
+author: PJZ9n
+desctiption: UsefulCommandsPlugin
+website: http://pjsoft.asvd.net/
+permissions:
+  usefulcommands.*:
+    default: true
+    description: "Allows using all the UsefulCommands things"
+    children:
+      usefulcommands.command.*:
+        default: true
+        description: "Allows using all the UsefulCommands commands"
+        children:
+          usefulcommands.command.me:
+            default: true
+            description: "Allows all the me command"
+          usefulcommands.command.mes:
+            default: true
+            description: "Allows all the mes command"
